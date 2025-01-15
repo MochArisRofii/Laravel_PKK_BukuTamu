@@ -36,16 +36,18 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
+        // Guard untuk admin
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
+        // Guard untuk user biasa (jika ada)
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------

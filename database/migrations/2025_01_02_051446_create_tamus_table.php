@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tamus', function (Blueprint $table) {
-            $table->string('noktp', 20)->primary();
+            $table->id();
+            $table->string('noktp', 20);
             $table->string('nohp');
             $table->string('nama', 255);
             $table->text('alamat');

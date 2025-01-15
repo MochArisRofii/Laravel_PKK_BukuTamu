@@ -21,6 +21,12 @@ class TamuController extends Controller
         return view('tamu.verifikasi');
     }
 
+    public function search(Request $request)
+    {
+        $tamu = Tamu::where('nama', 'like', '%' . $request->cari . '%')->get();
+        return view('admin.tamu.index', compact('tamu'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

@@ -12,7 +12,7 @@ class Tamu extends Model
 
     protected $table = 'tamus';
 
-    protected $primaryKey = 'noktp';
+    // protected $primaryKey = 'noktp';
     public $incrementing = false;
     protected $keyType = 'string';
 
