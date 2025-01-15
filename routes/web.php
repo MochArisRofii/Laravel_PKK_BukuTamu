@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Routes for Tamu
-Route::get('/tamu/create', [TamuController::class, 'create'])->name('tamu.create');
-Route::post('/tamu/store', [TamuController::class, 'store'])->name('tamu.store');
-Route::get('/tamu', [TamuController::class, 'index'])->name('tamu.index');
+Route::post('/tamu', [TamuController::class, 'store'])->name('tamu.store');
+Route::get('/', [TamuController::class, 'index'])->name('tamu.index');
+Route::get('/verifikasi', [TamuController::class, 'verifikasi'])->name('tamu.verifikasi');
 
 // Routes for Admin
 Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');

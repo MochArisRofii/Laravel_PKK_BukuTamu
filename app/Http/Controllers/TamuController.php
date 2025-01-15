@@ -16,12 +16,17 @@ class TamuController extends Controller
         return view('tamu.index', compact('tamus'));
     }
 
+    public function verifikasi()
+    {
+        return view('tamu.verifikasi');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('tamu.create');
+        // return view(view: 'tamu.index');
     }
 
     /**
@@ -41,7 +46,7 @@ class TamuController extends Controller
         Tamu::create($validatedData);
 
         // Redirect setelah sukses, memberi pesan
-        return redirect()->route('tamu.create')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
+        return redirect()->route('tamu.verifikasi')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
     }
 
     /**
