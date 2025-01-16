@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nohp');
             $table->string('nama', 255);
             $table->text('alamat');
+            $table->string('keperluan', 255);
             $table->timestamps();
         });
     }

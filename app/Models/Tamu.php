@@ -20,7 +20,8 @@ class Tamu extends Model
         'noktp',
         'nohp',
         'nama',
-        'alamat'
+        'alamat',
+        'keperluan'
     ];
 
 }

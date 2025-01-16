@@ -46,13 +46,14 @@ class TamuController extends Controller
             'nohp' => 'required|string|max:20', // Validasi nomor hp
             'nama' => 'required|string|max:255', // Validasi nama tamu
             'alamat' => 'required|string', // Validasi alamat tamu
+            'keperluan' => 'required|string|max:255',
         ]);
 
         // Menyimpan data tamu ke database
         Tamu::create($validatedData);
 
         // Redirect setelah sukses, memberi pesan
-        return redirect()->route('tamu.verifikasi')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
+        return redirect()->route('tamu.index')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
     }
 
     /**

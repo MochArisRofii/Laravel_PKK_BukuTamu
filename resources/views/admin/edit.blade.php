@@ -34,6 +34,11 @@
                 <textarea name="alamat" id="alamat" class="w-full px-3 py-2 border border-gray-300 rounded" required>{{ old('alamat', $tamus->alamat) }}</textarea>
             </div>
 
+            <div class="mb-4">
+                <label for="keperluan" class="block">keperluan</label>
+                <input type="text" name="keperluan" id="keperluan" value="{{ old('keperluan', $tamus->keperluan) }}" class="w-full px-3 py-2 border border-gray-300 rounded" required>
+            </div>
+            
             <!-- Tombol Submit -->
             <div class="flex justify-end">
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Update Data</button>

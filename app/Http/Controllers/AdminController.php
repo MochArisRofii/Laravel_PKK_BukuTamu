@@ -24,6 +24,7 @@ class AdminController extends Controller
             'nohp' => 'required|string|max:20',
             'nama' => 'required|string|max:255',
             'alamat' => 'required|string',
+            'keperluan' => 'required|string|max:255',
         ]);
 
         // Menemukan data tamu berdasarkan id

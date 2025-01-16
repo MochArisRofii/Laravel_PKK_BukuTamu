@@ -13,6 +13,7 @@
                     <th class="py-2 px-4 text-left">No HP</th>
                     <th class="py-2 px-4 text-left">Nama</th>
                     <th class="py-2 px-4 text-left">Alamat</th>
+                    <th class="py-2 px-4 text-left">Keperluan</th>
                     <th class="py-2 px-4 text-left">Aksi</th>
                 </tr>
             </thead>
@@ -24,6 +25,7 @@
                         <td class="py-2 px-4">{{ $data->nohp }}</td>
                         <td class="py-2 px-4">{{ $data->nama }}</td>
                         <td class="py-2 px-4">{{ $data->alamat }}</td>
+                        <td class="py-2 px-4">{{ $data->keperluan }}</td>
                         <td class="py-2 px-4">
                             <!-- Action Buttons (Edit and Delete) -->
                             <a href="{{ route('admin.edit', $data->id) }}" class="text-blue-500 hover:text-blue-700 mr-3">Edit</a>
