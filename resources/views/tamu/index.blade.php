@@ -54,10 +54,15 @@
                             class="inline-block py-2 px-3 text-white rounded hover:bg-yellow-500 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0 md:dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-white">Hubungi
                             Kami</a>
                     </li>
+                    <a href="/admin"
+                        class="bg-white text-black px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-yellow-500 hover:text-white transition">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
                 </ul>
             </div>
         </div>
     </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
 
 
     <!-- Bagian Banner -->
@@ -179,9 +184,10 @@
                         class="mx-auto rounded-lg shadow-md max-w-xs md:max-w-md">
                 </div>
                 <div>
-                    <form action={{ route('tamu.store') }} method="post" class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <form action={{ route('tamu.store') }} method="post"
+                        class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
                         <h3 class="text-lg font-semibold text-gray-700 mb-6">Formulir Kontak</h3>
-                        @csrf 
+                        @csrf
                         <div class="mb-4">
                             <label for="noktp" class="block text-left font-medium text-gray-700 mb-2">No KTP</label>
                             <input type="number" id="noktp" name="noktp"
@@ -202,13 +208,15 @@
                                 placeholder="Masukkan Nama Anda">
                         </div>
                         <div class="mb-4">
-                            <label for="alamat" class="block text-left font-medium text-gray-700 mb-2">Alamat</label>
+                            <label for="alamat"
+                                class="block text-left font-medium text-gray-700 mb-2">Alamat</label>
                             <textarea id="alamat" name="alamat"
                                 class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                                 rows="3" placeholder="Masukkan Alamat Anda"></textarea>
                         </div>
                         <div class="mb-4">
-                            <label for="keperluan" class="block text-left font-medium text-gray-700 mb-2">keperluan</label>
+                            <label for="keperluan"
+                                class="block text-left font-medium text-gray-700 mb-2">keperluan</label>
                             <input type="text" id="keperluan" name="keperluan"
                                 class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                                 placeholder="Masukkan keperluan Anda">

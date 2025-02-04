@@ -53,7 +53,7 @@ class TamuController extends Controller
         Tamu::create($validatedData);
 
         // Redirect setelah sukses, memberi pesan
-        return redirect()->route('tamu.index')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
+        return redirect()->route('tamu.verifikasi')->with('Berhasil', 'Data Tamu Berhasil Ditambahkan');
     }
 
     /**
