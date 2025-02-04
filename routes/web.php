@@ -32,6 +32,7 @@ Route::post('/admin/login', [AdminController::class, 'authenticate'])->name('adm
 Route::post('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 
 Route::get('/admin/tamu', [AdminController::class, 'viewTamus'])->name('admin.tamu');
+Route::get('/admin/admin', [AdminController::class, 'admin'])->name('admin.admin');
 
 Route::get('admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
 

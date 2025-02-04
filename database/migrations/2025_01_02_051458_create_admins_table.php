@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('username');
             $table->string('password');
             $table->string('nama');
+            $table->string('gander');
             $table->text('alamat');
             $table->date('tgllahir');
             $table->integer('nohp');

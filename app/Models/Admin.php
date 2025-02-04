@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Authenticatable
+class   Admin extends Authenticatable
 {
     use HasFactory;
 
@@ -16,6 +16,7 @@ class Admin extends Authenticatable
         'username',
         'password',
         'nama',
+        'gender',
         'alamat',
         'tgllahir',
         'nohp'

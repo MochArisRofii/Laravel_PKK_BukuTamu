@@ -40,6 +40,12 @@
                         <i class="fas fa-users mr-3"></i>Data Tamu
                     </a>
                 </li>
+                <li>
+                    <a class="text-white text-lg hover:bg-blue-700 px-4 py-2 rounded-md transition duration-300"
+                        href="{{ route('admin.admin') }}">
+                        <i class="fas fa-users mr-3"></i>Data Admin
+                    </a>
+                </li>
                 <!-- Sidebar - Logout -->
                 <li>
                     <form action="{{ route('admin.logout') }}" method="POST">

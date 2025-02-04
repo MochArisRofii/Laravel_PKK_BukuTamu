@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use App\Models\Tamu;
 use Illuminate\Http\Request;
 
@@ -82,6 +83,11 @@ class AdminController extends Controller
         return redirect()->route('admin.login');  // Pastikan redirect menuju halaman login
     }
 
+    public function admin()
+    {
+        $admins = Admin::all();
+        return view('admin.admin', compact('admins'));
+    }
 
     public function ViewTamus()
     {
